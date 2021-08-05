@@ -4,6 +4,7 @@
     <ul class="menu-list">
       <li><a href="{{ '/' | relative_url }}">Home</a></li>
       <li><a href="{{ '/about' | relative_url }}">About</a></li>
+      <li><a href="{{ '/posts' | relative_url }}">Posts</a></li>
     </ul>
     <p class="menu-label">recent posts</p>
     <ul class="menu-list">
@@ -15,7 +16,7 @@
       <!--  -->
       {% if site.posts.size > 5 %}
       <li>
-        <a href="{{ '/' | relative_url }}">more...</a>
+        <a href="{{ '/posts' | relative_url }}">more...</a>
       </li>
       {% endif %}
     </ul>

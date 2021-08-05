@@ -1,12 +1,22 @@
-<figure class="image">
-  {% if include.url %}
-  <img src="{{ include.url }}" alt="{{ include.description }}" />
+{% assign sze = ''%}
+<!--  -->
+{% if include.sze %}
+<!--  -->
+{% capture sze %}is-{{ include.sze}}{% endcapture %}
+<!--  -->
+{%endif %}
+<!--  -->
+<figure class="image {{ sze }}">
+  {% if include.src %}
+  <img src="{{ include.src }}" alt="{{ include.description }}" />
   {% elsif include.asset %}
   <!--  -->
   {% capture path %}/assets/img/{{ include.asset }}{% endcapture %}
   <!--  -->
   <img src="{{ path | relative_url }}" alt="{{ include.description }}" />
-  {% endif %} {% if include.caption %}
+  {% endif %}
+  <!--  -->
+  {% if include.caption %}
   <figcaption>{{ include.caption }}</figcaption>
   {% endif %}
 </figure>
