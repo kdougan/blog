@@ -1,0 +1,137 @@
+html,
+body {
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #2f2034,
+    #232526
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #2f2034,
+    #232526
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.navbar,
+.footer {
+  background-color: transparent;
+}
+
+a.navbar-item,
+.navbar-link {
+  color: white;
+}
+
+#navbarBasicExample {
+  background-color: #3a3a3a;
+}
+
+/* Remove Navbar hover color - START */
+.navbar-item,
+.navbar-link a:hover {
+  background-color: transparent;
+}
+
+a.navbar-item:hover,
+a.navbar-item.is-active,
+.navbar-link:hover,
+.navbar-link.is-active {
+  background-color: transparent;
+}
+
+.navbar-item.has-dropdown:hover .navbar-link,
+.navbar-item.has-dropdown.is-active .navbar-link {
+  background-color: transparent;
+}
+
+.title,
+.subtitle,
+.block {
+  color: #f0efef;
+}
+
+/* END */
+
+.input,
+.textarea,
+.select select {
+  border-color: transparent;
+}
+
+.box {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.25);
+  color: #f0efef;
+  display: block;
+  padding: 1.25rem;
+}
+
+.input,
+.textarea {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.25);
+  max-width: 100%;
+  width: 100%;
+  outline: none;
+}
+
+.input,
+.textarea,
+.select select {
+  background-color: #3a3a3a;
+  border-color: transparent;
+  border-radius: 4px;
+  color: white;
+}
+
+.input::placeholder {
+  color: white;
+}
+.control::placeholder {
+  color: white;
+}
+.cards-with-icons {
+  margin-top: 2em;
+  margin-bottom: 8em;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.footer {
+  color: white;
+}
+
+strong {
+  color: #d8d8d8;
+}
+
+#behance {
+  color: #053eff;
+  padding-right: 1em;
+}
+
+#dribbble {
+  color: #ea4c89;
+  padding-right: 1em;
+}
+
+#github {
+  color: #21262c;
+}

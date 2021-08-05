@@ -1,0 +1,14 @@
+{% assign ratio = '16by9' %} {% if include.ratio %} {% assign ratio =
+include.ratio %} {% endif %}
+<figure class="image is-{{ ratio }}">
+  <iframe
+    class="has-ratio"
+    width="{{ include.width }}"
+    height="{{ include.height }}"
+    src="{{ include.src }}"
+    title="{{ include.title }}"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</figure>

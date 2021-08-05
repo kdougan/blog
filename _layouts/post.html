@@ -2,10 +2,21 @@
 layout: default
 ---
 
-<section class="post-content">
-  <h2>{{ page.title }}</h2>
+<div class="box">
+  <div class="block">
+    <p class="title is-2">{{ page.title }}</p>
+    <p class="subtitle is-6">
+      {{ page.date | date: '%A, %B %e, %Y - %l:%M%p' }}
+    </p>
+  </div>
 
-  <h3>{{ page.date | date: ' %b %d, %Y - %r:%M' }}</h3>
+  <div class="block has-text-centered">
+    <span class="icon">
+      <i class="mdi mdi-dots-horizontal"></i>
+    </span>
+  </div>
 
-  {{ content }}
-</section>
+  <div class="block">
+    <div class="content has-text-light">{{ content }}</div>
+  </div>
+</div>

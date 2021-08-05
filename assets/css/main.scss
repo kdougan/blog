@@ -1,106 +1,162 @@
 ---
 ---
 
+@import 'https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css';
+@import 'https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css';
+@import 'theme';
 @import 'typography';
 @import 'pygments-base16-eighties-dark';
+@import 'background';
 
 html,
 body {
+  width: 100vw;
+  height: 100vh;
+  color: #f0efef;
+}
+
+blockquote {
+  background-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+.youtube-video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.youtube-video-container::after {
+  display: block;
+  content: '';
+  padding-top: 56.25%;
+}
+
+.youtube-video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: #313131;
-  color: #f0f0f0;
 }
 
-.center-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #f0efef !important;
 }
 
-.footer {
-  margin-top: 2rem;
-}
-.content {
-  width: 45rem;
-  margin: 0 auto;
+h1 {
+  font-size: 3rem;
 }
 
-.sidebar {
-  width: 8rem;
+h2 {
+  font-size: 2.5rem;
 }
 
-.post-content {
-  display: flex;
-  flex-direction: column;
-  width: 32rem;
-  margin: 0 auto 0 0;
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+.highlighter-rouge {
+  margin: 1rem 2rem 3rem 1rem;
 }
 
 .highlight pre {
   margin: 0;
   padding: 1rem;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 12px rgba($color: #000000, $alpha: 0.5),
+    0 0 0 1px rgba($color: #000000, $alpha: 0.25);
   border-radius: 8px;
   overflow-x: auto;
+  text-align: left;
 }
 
-code.language-plaintext {
-  padding: 0cm 0.5rem;
-}
-
-a {
+a,
+.menu-list a {
   color: orchid;
   text-decoration: none;
 }
 
-a:hover {
+a:hover,
+.menu-list a:hover {
+  color: orchid;
   text-decoration: underline;
 }
-
-.colors {
-  list-style: none;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  color: #313131;
+.menu-list a:hover {
+  background-color: rgba($color: #000000, $alpha: 0.25);
 }
 
-.colors .block {
-  display: block;
-  float: left;
-  width: 0.75rem;
-  height: 0.75rem;
-  text-align: center;
+a.disabled {
+  pointer-events: none;
 }
 
 .base08 {
+  color: #ab4642;
+}
+
+.base08-bg {
   background-color: #ab4642;
 }
 
 .base09 {
+  color: #dc9656;
+}
+
+.base09-bg {
   background-color: #dc9656;
 }
 
 .base0A {
+  color: #f7ca88;
+}
+
+.base0A-bg {
   background-color: #f7ca88;
 }
 
 .base0B {
+  color: #a1b56c;
+}
+
+.base0B-bg {
   background-color: #a1b56c;
 }
 
 .base0C {
+  color: #86c1b9;
+}
+
+.base0C-bg {
   background-color: #86c1b9;
 }
 
 .base0D {
+  color: #7cafc2;
+}
+
+.base0D-bg {
   background-color: #7cafc2;
 }
 
 .base0E {
+  color: #ba8baf;
+}
+
+.base0E-bg {
   background-color: #ba8baf;
 }

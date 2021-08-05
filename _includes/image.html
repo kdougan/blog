@@ -1,0 +1,12 @@
+<figure class="image">
+  {% if include.url %}
+  <img src="{{ include.url }}" alt="{{ include.description }}" />
+  {% elsif include.asset %}
+  <!--  -->
+  {% capture path %}/assets/img/{{ include.asset }}{% endcapture %}
+  <!--  -->
+  <img src="{{ path | relative_url }}" alt="{{ include.description }}" />
+  {% endif %} {% if include.caption %}
+  <figcaption>{{ include.caption }}</figcaption>
+  {% endif %}
+</figure>

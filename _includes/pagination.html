@@ -1,0 +1,54 @@
+<!-- Pagination links -->
+{% if paginator.total_pages > 1 %}
+<div class="buttons has-addons is-centered">
+  <!--  -->
+  <a
+    class="button is-inverted is-rounded"
+    style="background-color: rgba(0,0,0,0.25); border: none; color:orchid"
+    {%if paginator.previous_page%}
+      href="{{ paginator.previous_page_path | relative_url }}"
+    {%else%}
+      disabled
+    {%endif%}
+  >
+    <span class="icon">
+      <i class="mdi mdi-skip-previous"></i>
+    </span>
+  </a>
+
+
+  <!--  -->
+  {% for page in (1..paginator.total_pages) %}
+  <a
+    class="button is-inverted is-rounded"
+    style="background-color: rgba(0,0,0,0.25); border: none; color:orchid"
+    {%if page != paginator.page%}
+      {%if page == 1%}
+        href="{{ '/' | relative_url }}"
+      {%else%}
+        href="{{ site.paginate_path | relative_url | replace: ':num', page }}"
+      {%endif%}
+    {%else%}
+      disabled
+    {%endif%}  
+  >
+    {{ page }}
+  </a>
+  {% endfor %}
+  <!--  -->
+
+  <a
+    class="button is-inverted is-rounded"
+    style="background-color: rgba(0,0,0,0.25); border: none; color:orchid"
+    {%if paginator.next_page%}
+      href="{{ paginator.next_page_path | relative_url }}"
+    {%else%}
+      class="disabled"
+    {%endif%}
+  >
+    <span class="icon">
+      <i class="mdi mdi-skip-next"></i>
+    </span>
+  </a>
+</div>
+{% endif %}

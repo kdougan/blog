@@ -2,11 +2,23 @@
 <html>
   {% include head.html %}
   <body>
+    {% include background.html %}
+    <!--  -->
     {% include header.html %}
-    <div class="center-wrapper">
-      <section class="sidebar">{% include sidebar.html %}</section>
-      <section class="content">{{ content }}</section>
-    </div>
+    <section class="section">
+      <div class="container">
+        <div class="columns is-mobile is-multiline is-centered">
+          <div class="column is-2">{% include side-menu.html %}</div>
+          <div class="column is-8">
+            <div class="content">{{ content }}</div>
+          </div>
+          <div class="column is-2"></div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    {% include divider.html %}
+    <!--  -->
     {% include footer.html %}
   </body>
 </html>
