@@ -2,8 +2,8 @@ title: kdougan, a blog
 email: kdougan@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   An awesome description
-baseurl: /blog
-url: 'kdougan.com'
+baseurl: /
+url: kdougan.com
 twitter_username: f0ursqu4r3
 github_username: kdougan
 
