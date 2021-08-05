@@ -12,7 +12,7 @@ Veniam ullamco irure in elit sunt sint culpa excepteur. Cupidatat esse consequat
 
 {%
     include image.html
-    url="https://wallpapertag.com/wallpaper/full/e/c/7/143823-popular-4k-gaming-wallpapers-3840x2160.jpg"
+    src="https://wallpapertag.com/wallpaper/full/e/c/7/143823-popular-4k-gaming-wallpapers-3840x2160.jpg"
     description="Battlefield 4 - 4K"
     caption="Testing images"
 %}
