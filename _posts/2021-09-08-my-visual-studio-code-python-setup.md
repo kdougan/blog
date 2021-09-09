@@ -8,7 +8,7 @@ tags: [python, visual studio code, python setup]
 summary:
 ---
 
-I have been using Visual Studio Code for a while now, and I have found that it is a great tool for my development. Because of the converstaions I have had with amy new programmers, I wanted to show my setup for python in hopes that it will be useful to others. That, and it will make for a good first (actual) post.
+I have been using Visual Studio Code for a while now, and I have found that it is a great tool for my development. Because of the converstaions I have had with many new programmers, I wanted to show my setup for python in hopes that it will be useful to others. That, and it will make for a good first (actual) post.
 
 ## Requirements
 
