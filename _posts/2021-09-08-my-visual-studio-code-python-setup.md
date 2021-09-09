@@ -66,7 +66,7 @@ First step is creating a new folder and then navigating to it.
 $ mkdir my-python-project && cd my-python-project
 ```
 
-Next, we need to create a virtual environment. I like to manually create both the virtual environment folder as well as the requirements file Pipenv.
+Next, we need to create a virtual environment. I like to manually create both the virtual environment folder as well as the requirements file for Pipenv.
 
 ```bash
 $ mkdir .venv
